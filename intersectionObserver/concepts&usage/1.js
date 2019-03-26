@@ -1,7 +1,7 @@
 var options = {
   root: document.querySelector('#scrollArea'),
   rootMargin: '0px',
-  threshold: [0.5,1.0]
+  threshold: [0.2,0.5,1.0,0.5,0]
 }
 var callback = function (entries, observer) {
   /* Content excerpted, show below */
