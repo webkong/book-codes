@@ -5,8 +5,10 @@ class Event {
   on(type, handler) {
     if (!this._cbQueue[type]) {
       this._cbQueue[type] = [handler]
+    }else{
+      this._cbQueue[type].push(handler)
     }
-    this._cbQueue[type].push(handler)
+    
   }
   emit(type, data) {
     if (this._cbQueue[type]) {
